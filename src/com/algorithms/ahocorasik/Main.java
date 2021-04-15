@@ -12,6 +12,7 @@ import java.util.HashMap;
 
 public class Main {
 
+
     public static void main(String[] args) throws IOException {
 	    // Read in the entire bible
         String path = new File("bible.txt").getAbsolutePath();
@@ -56,9 +57,8 @@ public class Main {
         long b = System.currentTimeMillis();
 
         //Print out our results!
-        results.entrySet().forEach(entry -> {
-            System.out.println(entry.getValue() + " -> " + entry.getKey());
-        });
+        results.forEach((key, value) -> System.out.println(value + " -> " + key));
         System.out.println("Searched took " + (b-a) + " milliseconds");
+
     }
 }
