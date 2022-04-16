@@ -1,2 +1,2 @@
 # AhoCorasick
- Node based implementation of the Aho Corasick algorithm
+Java based implementation of the Aho Corasick algorithm!
